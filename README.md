@@ -1,34 +1,20 @@
----
-title: ESCalate
-name: escalate_1
-category: escalate
-layout: default
-toc: true
----
-
-{% include layouts/title.md %}
-
-
 #### Table of contents
 
-- [About]()
+- [About](#about)
 - Fast HowTos:
-   - [Run ESCalate]()  
-   - [Run fast simulations]()
-   - [Run full simulations]()   
+   - [Run ESCalate](#run-escalate)  
+   - [Run fast simulations](#run-fast-simulations)
+   - [Run full simulations](#run-full-simulations)   
 - Detailed instructions:   
-   - [Running in docker]()   
+   - [Running in docker](#running-in-docker)   
    - [Spack CVMFS central installation](#spack-cvmfs-central-installation)
-   - [eic-image at jupyterhub.jlab.org]()
-   - [Examples, tutorials and workspace]()
-- [Remote work suggestions]()
+   - [eic-image at jupyterhub.jlab.org](#eic-image-at-jupyterhub.jlab.org)
+   - [Examples, tutorials and workspace](#Examples,-tutorials-and-workspace)
+- [Remote work suggestions](#remote-work-suggestions)
 
 
 # ESCalate framework
 
-
-<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/13083/logo-extra-whitespace.png" width="" style="float:left; width:20pt; padding: 3px;"/> [https://gitlab.com/eic/escalate](https://gitlab.com/eic/escalate)
-<div style="clear: left;"></div>
 
 > **ESC** - stands for **E**IC **S**oftware and **C**omputing group.
 **ESC**alate combines together the software being develop by the group such as:
