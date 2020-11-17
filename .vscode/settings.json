@@ -1,0 +1,5 @@
+{
+    "window.title":"Doc ESCalate",
+    "restructuredtext.confPath": "${workspaceFolder}\\docs",    
+    "python.pythonPath": "C:\\tools\\Anaconda3\\python.exe"
+}
