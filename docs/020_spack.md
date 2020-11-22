@@ -81,39 +81,11 @@ spack load g4e@1.3.7
 
 <br>
 
-## CMake build
+## Ubuntu prerequiesties
 
-```bash
-git clone https://gitlab.com/jlab-eic/g4e.git
-mkdir g4e/build
-cd g4e/build
-cmake -DGEANT4_DIR=<geant4 installation> ../
-make
 ```
-
-### Dependencies
-
-- **Geant4**
-   - CMake flag: `GEANT4_DIR`   
-- **VGM**  
-   Provides export to CERN.ROOT geometry
-   - Env. variable: `VGM_DIRECTORY` or `VGM_DIR`
-   - CMake flag: `VGM_DIRECTORY`
-- **HEPMC2**
-    Required to open Pythia8 and other HepMC2 compatible MC files   
-   - Env. variable: `HEPMC_DIR` or `HEPMC_ROOT_DIR`
-   - CMake flag: `HEPMC_DIRECTORY` or `HEPMC_DIR`
-- **Cern ROOT**  
-   Required for IO and some histogramming
-   - Environment variable: `ROOTSYS`
-   - CMake flag: `CERN_ROOT_DIRECTORY`
-
-
-### CMake flags
-
-Additional flags:
-`WITH_GEANT4_UIVIS` = ON Build with Geant4 UI and Vis drivers. Default
-`CMAKE_CXX_STANDARD` = 11 - C++ standard used.
+sudo apt install build-essential
+```
 
 ## Use ejpm (obsolete)
 
