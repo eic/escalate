@@ -9,7 +9,7 @@ The primary goal of the images is to provide an easy means for scientists to sta
 * electronioncollider/escalate
 * electronioncollider/escalate-gui
 
-.. image:: docker-hierarhy.svg
+.. image:: https://gitlab.com/eic/containers/-/blob/master/docker-hierarhy.svg
 
 
 Software version table ESCalate 1.1.0
@@ -45,7 +45,7 @@ Software version table ESCalate 1.1.0
 `EIC software quick start tutorial <https://eic.gitlab.io/documents/quickstart/>`_
 
 Installing Docker
-=================
+-----------------
 
 The Docker_ virtualization software is available for Linux, macOS, and Windows. Please follow the instructions to install, configure, and test Docker on your system: 
 
@@ -68,7 +68,8 @@ The EIC Software images are deployed using the electronioncollider swarm on Dock
 
     docker pull electronioncollider/escalate:v1.1.0
 
-This requires Docker to be running on the local system. Please see the `Troubeshoot`_ section if you receive the error message of ```no space left on device```. 
+This requires Docker to be running on the local system. 
+Please see the `Troubleshoot`_ section if you receive the error message of ```no space left on device```. 
 
 Running the EIC Software image
 ------------------------------
@@ -76,12 +77,14 @@ Running the EIC Software image
 The EIC Software images provide an interactive environment which can be started via: 
 
 .. code-block:: bash
+
    docker run -it --rm -p8888:8888 electronioncollider/escalate:v1.1.0
 
 
 and can be accessed via the host system’s native web browser.
 
 .. code-block:: bash
+
    http://127.0.0.1:8888/
 
 
@@ -97,7 +100,9 @@ It usually means, that the port 8888 is used by another application.
 To fix that try to change `-p 8888:8888` flag to `-p <something>:8888` 
 e.g. `-p 9999:8888`. Put the same port in your browser:
 
+
 .. code-block:: bash
+
    127.0.0.1:9999/lab
 
 
@@ -106,7 +111,7 @@ Occasionally, the error message of ``no space left on device`` has been reported
 
 
 X11 - Working with GUI
-======================
+----------------------
 
 There are several ways of dealing with native GUI applications for 
 escalate and escalate-gui images. E.g. showing standard root browser or Geant4 event viewer. 
@@ -123,12 +128,14 @@ What is the best option:
 eicuser password is eicuser
 
 .. code-block:: bash
+
     docker run --rm -it -p127.0.0.1:2222:22 electronioncollider/escalate:latest runssh
 
 
-connect with SSH
+connect with SSH:
 
 .. code-block:: bash
+
     ssh -X eicuser@127.0.0.1 -p 2222
 
 

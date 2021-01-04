@@ -1,0 +1,94 @@
+
+<style>
+    .zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* font: normal 13px Arial, sans-serif; */
+}
+.zui-table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+.zui-table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+</style>
+
+
+<table class="zui-table">
+    <thead>
+        <tr>
+            <th class="head"></th>
+            <th class="head">EJPM</th>
+            <th class="head">Spack</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Design</strong></td>
+            <td>
+                User friendly CLI build scritps replacement. Laptops and workstations in mind.
+            </td>
+            <td>Full featured package manager capable to build and install 
+                multiple software versions and configurations. Supercomputers and farms in mind but laptops possible.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Dependencies</strong></td>
+            <td>Use system packages (yum, apt) as much as possible</td>
+            <td>Use few system packages and build ALL dependencies</td>
+        </tr>
+        <tr>
+            <td><strong>Utilize user packages</strong><br>(ROOT, Geant4)</td>
+            <td>Easy to add </td>
+            <td>Possible via editing configs but cumbersom</td>
+        </tr>
+        <tr>
+            <td><strong>Packages variety</strong></td>
+            <td>Only ESCalate and EIC related</td>
+            <td>All kinds of packages</td>
+        </tr>
+        <tr>
+            <td><strong>Versions</strong></td>
+            <td>Limited support of package versions</td>
+            <td>Spack shines here</td>
+        </tr>
+        <tr>
+            <td><strong>Updates</strong></td>
+            <td colspan="2">No automatic package updates</td>
+        </tr>        
+        <tr>
+            <td><strong>Development</strong></td>
+            <td>
+                Very easy to modify/develop code
+            </td>
+            <td>Possible with develop environments. Cumbersom compared to EJPM</td>
+        </tr>
+        <tr>
+            <td><strong>Support</strong></td>
+            <td>EIC community</td>
+            <td>EIC community for EIC packages. 
+                Large science (HEP, Astrophysics, etc.) community 
+                for the rest of the packages and Spack itself </td>
+        </tr>
+    
+        <!--
+        <tr>
+            <td><strong></strong></td>
+            <td></td>
+            <td></td>
+        </tr>-->
+
+    </tbody>
+    
+</table>
+<br>

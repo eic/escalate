@@ -11,6 +11,7 @@ ESCalate
    :caption: Getting Started:
 
    010_containers
+   015_local_install
    020_spack   
 
 .. .. toctree::
