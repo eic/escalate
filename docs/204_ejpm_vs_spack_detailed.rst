@@ -1,3 +1,4 @@
+:orphan:
 
 .. _spack-ejpm-comparison:
 
@@ -6,6 +7,7 @@ Detailed comparison between EJPM and Spack
 
 
 .. Table with EJPM vs Spack comparison
+
 
 .. raw:: html
    :file: 016_ejpm_vs_spack_table.html

@@ -165,7 +165,11 @@ Go to {% include navigation/findlink.md name='jupyterhub.jlab.org' %} (follow au
 In the **Spawner options** -> **Select a notebook image**, 
 set **eic-notebook (dev)** there
 
-<img src="https://gitlab.com/eic/escalate/workspace/-/raw/master/img/jlab_jupyterhub_spawner.jpg" style="width:400pt">
+.. figure:: _images/jlab_jupyterhub_spawner.jpg
+   :alt: jlab\_jupyterhub\_spawner
+   :width: 400
+
+   jlab\_jupyterhub\_spawner
 
 
 You should end up in your jefferson lab home directory. 
@@ -254,8 +258,3 @@ g4e = Geant4Eic()\
 ```
 
 Look at the docker or [tutorials repo](https://gitlab.com/eic/escalate/workspace) for more examples
-
-
-
-
-

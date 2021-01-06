@@ -1,5 +1,7 @@
-Docker images
-=================
+Containers
+==========
+
+We use Docker as the default containerization technology. Singularity is also can be easily used utilizing docker images. 
 
 The primary goal of the images is to provide an easy means for scientists to start running EIC software. There 4 main images:
 
@@ -58,7 +60,6 @@ The Docker_ virtualization software is available for Linux, macOS, and Windows. 
 .. _Docker Engine: https://hub.docker.com/search/?type=edition&offering=community
 
 
-
 Obtaining the EIC Software image
 --------------------------------
 
@@ -70,6 +71,7 @@ The EIC Software images are deployed using the electronioncollider swarm on Dock
 
 This requires Docker to be running on the local system. 
 Please see the `Troubleshoot`_ section if you receive the error message of ```no space left on device```. 
+
 
 Running the EIC Software image
 ------------------------------
@@ -89,6 +91,7 @@ and can be accessed via the host system’s native web browser.
 
 
 This requires Docker to be running on the local system. The ```--rm``` flag is used to automatically clean up the container and remove the file system (and all modified and created files with it) when the container exits.  The flag is included for the sake of tutorials but not needed when working with the JupyterLab environment where retaining all data in the container (including all changes and modifications) might be preferred. By default (without ```--rm``` flag), a container’s file system persists even after the container exits. 
+
 
 Troubleshoot
 ------------
@@ -122,8 +125,9 @@ escalate and escalate-gui images. E.g. showing standard root browser or Geant4 e
 What is the best option:
 
 
+
 1. SSH -X
----------
+.........
 
 eicuser password is eicuser
 
@@ -141,7 +145,7 @@ connect with SSH:
 
 
 2. X11
-------
+......
 
 The most convenient is using X11 directly. It require x11 client apps on Macs and Windows and may have some issues with user id's and permissions on Posix (max & linux). 
 It might sound complex, but actiually it is simple and works most of the times. Still we don't use this way for the tutorials, but it is available in the documentation. 
@@ -152,7 +156,7 @@ It might sound complex, but actiually it is simple and works most of the times. 
 You can use X11 natively (as natively as possible) with this docker image in your system:
 
 Linux
-.....
+^^^^^
 
 To use graphics, make sure you are in an X11 session and run the following command: 
 
@@ -164,9 +168,9 @@ To use graphics, make sure you are in an X11 session and run the following comma
 There might be issues with user id on systems like JLab farms. 
 
 Windows
-.......
+^^^^^^^
 
-To enable graphics, you must have [VcXsrv](https://sourceforge.net/projects/vcxsrv/files/latest/download) installed. 
+To enable graphics, you must have `VcXsrv <https://sourceforge.net/projects/vcxsrv/files/latest/download>`_ installed. 
 Make sure VcXsrv is whitelisted in the Windows firewall when prompted. 
 
 Start VcXsrv with 'allow from any origin' flag
@@ -177,7 +181,7 @@ Start VcXsrv with 'allow from any origin' flag
 
 
 OSX
-...
+^^^
 
 To use graphics on OSX, make sure XQuarz is installed. 
 After installing, open XQuartz, and go to XQuartz, Preferences, select the Security tab, and tick the box 
@@ -202,7 +206,6 @@ Finally, you can start up docker with the following command:
 .. code-block:: bash
 
     docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$ip:0 -p8888:8888 electronioncollider/escalate
-
 
 
 

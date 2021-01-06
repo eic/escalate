@@ -4,15 +4,15 @@ ESCalate
 ========
 
 
-
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Getting Started:
 
-   010_containers
-   015_local_install
-   020_spack   
+   100_containers
+   200_local_install
+   300_farms
+   400_jupyterhub
 
 .. .. toctree::
 ..    :maxdepth: 2
