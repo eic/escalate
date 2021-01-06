@@ -8,9 +8,12 @@ Detailed comparison between EJPM and Spack
 
 .. Table with EJPM vs Spack comparison
 
+What packet manager to use? **The recommendation is**: to use EJPM for personal laptops with Linux OS for personal use and development. Use Spack on farms or if you are familiar with Spack or use Spack for other projects.
+
+Precise comparison table:
 
 .. raw:: html
-   :file: 016_ejpm_vs_spack_table.html
+   :file: 202_ejpm_vs_spack_table.html
 
   
 1. EJPM was designed with user laptops and work stations in mind to be a user friendly CLI alternative to "build scritps" that compiles compiling chains of packages with right flags. 
