@@ -14,6 +14,17 @@ ESCalate
    300_farms
    400_jupyterhub
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Packages:
+
+   G4E <https://gitlab.com/jlab-eic/g4e>
+   Jana2 <https://jeffersonlab.github.io/JANA2/>
+   Ejpm <https://jeffersonlab.github.io/JANA2/>
+
+
+
+
 .. .. toctree::
 ..    :maxdepth: 2
 ..    :caption: Design:
