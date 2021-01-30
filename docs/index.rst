@@ -16,11 +16,12 @@ ESCalate
 
 .. toctree::
    :maxdepth: 1
-   :caption: Packages:
+   :caption: Packages docs:
 
-   G4E <https://gitlab.com/jlab-eic/g4e>
+   G4E <https://escalate.readthedocs.io/projects/g4e/en/latest/>
    Jana2 <https://jeffersonlab.github.io/JANA2/>
-   Ejpm <https://jeffersonlab.github.io/JANA2/>
+   Ejpm <https://gitlab.com/eic/escalate/ejpm>
+
 
 
 
