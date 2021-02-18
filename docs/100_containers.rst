@@ -92,6 +92,26 @@ and can be accessed via the host system’s native web browser.
 
 This requires Docker to be running on the local system. The ```--rm``` flag is used to automatically clean up the container and remove the file system (and all modified and created files with it) when the container exits.  The flag is included for the sake of tutorials but not needed when working with the JupyterLab environment where retaining all data in the container (including all changes and modifications) might be preferred. By default (without ```--rm``` flag), a container’s file system persists even after the container exits. 
 
+You can bind any directory on your system to docker image by using **-v** flag:
+
+.. code-block:: 
+
+   -v <your/directory>:<docker/directory>
+
+
+Convenient place inside docker image is
+
+.. code-block::
+
+   /home/eicuser/workspace/share
+
+So the full command is: 
+
+.. code-block:: bash
+
+   docker run -it --rm -p8888:8888  -v <your/directory>:/home/eicuser/workspace/share electronioncollider/escalate:v1.1.0
+
+
 
 Troubleshoot
 ------------
