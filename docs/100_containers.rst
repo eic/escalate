@@ -14,9 +14,9 @@ The primary goal of the images is to provide an easy means for scientists to sta
 .. image:: https://gitlab.com/eic/containers/-/blob/master/docker-hierarhy.svg
 
 
-Software version table ESCalate 1.1.0
--------------------------------------
 
+electronioncollider/escalate v 1.2.0
+------------------------------------
 
 (Changed packet versions and new packets are bold)
 
@@ -25,20 +25,21 @@ Software version table ESCalate 1.1.0
 +=============+=============+=============+=============+=============+=============+=============+=============+
 | **Packet**  | **Version** | **Packet**  | **Version** | **Packet**  | **Version** | **Packet**  | **Version** |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| gcc         | 9.2.1       | hepmc       | 2.6.9       | LHAPDF6     | 6.2.3       | ejpm        | **0.3.21**  |
+| gcc         | **9.3.0**   | hepmc       | 2.6.9       | LHAPDF6     | 6.2.3       | ejpm        | **0.3.40**  |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| CMake       | 3.17.0      | hepmc3      | 3.2.1       | pythia8     | 8.244       | eic-smear   |  1.0.4f1    |
+| CMake       | 3.17.0      | hepmc3      | 3.2.1       | pythia8     | 8.244       | eic-smear   | **1.1.2**   |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| python      | 3.7.5       | vgm         | 4.5         | DIRE        | 2.004       | jana        | **2.0.3**   |
+| python      | **3.7.5**   | vgm         | 4.5         | DIRE        | 2.004       | jana        | **2.0.4**   |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| eigen3      | 3.3.7       | genfit      | 2020.1      | Cernlib     | 2006-12-20  | ejana       | **1.2.3**   |
+| eigen3      | 3.3.7       | genfit      | **2.0.0**   | Cernlib     | 2006-12-20  | ejana       | **1.3.0**   |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| clhep       | 2.3.2.2     | acts        | **0.22.01** | lhapdf5     | 5.9.1-6     | g4e         | **1.3.5**   |
+| clhep       | 2.3.2.2     | acts        | **1.2.1**   | lhapdf5     | 5.9.1-6     | g4e         | **1.4.0**   |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| ROOT        | 6-20-04     | delphes     | 3.4.2       | PYTHIA6     | RAD-CORR    | **smear**   | **0.1.6**   |
+| ROOT        | **6-22-06** | delphes     | 3.4.2       | PYTHIA6     | RAD-CORR    | smear       | 0.1.6       |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| Geant4      | 10.6.1      | fastjet     | 3.3.3       |             |             |             |             |
+| Geant4      | **10.6.2**  | fastjet     | 3.3.3       |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
 
 [#] - See CHANGELOG.rst for other versions
 
@@ -80,7 +81,7 @@ The EIC Software images provide an interactive environment which can be started 
 
 .. code-block:: bash
 
-   docker run -it --rm -p8888:8888 electronioncollider/escalate:v1.1.0
+   docker run -it --rm -p8888:8888 electronioncollider/escalate:1.2.0
 
 
 and can be accessed via the host system’s native web browser.
@@ -109,7 +110,7 @@ So the full command is:
 
 .. code-block:: bash
 
-   docker run -it --rm -p8888:8888  -v <your/directory>:/home/eicuser/workspace/share electronioncollider/escalate:v1.1.0
+   docker run -it --rm -p8888:8888  -v <your/directory>:/home/eicuser/workspace/share electronioncollider/escalate:1.2.0
 
 
 
