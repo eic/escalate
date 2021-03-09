@@ -9,7 +9,6 @@ The primary goal of the images is to provide an easy means for scientists to sta
 * electronioncollider/eic-science
 * electronioncollider/eic-mceg
 * electronioncollider/escalate
-* electronioncollider/escalate-gui
 
 .. image:: https://gitlab.com/eic/containers/-/blob/master/docker-hierarhy.svg
 
